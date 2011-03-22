@@ -4,7 +4,6 @@ import java.util.Calendar;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,7 +20,7 @@ public class CreateSpotifyAccount {
     private static final String PASSWORD_NEW_ID = "password_new";
     private static final String PASSWORD_CHECK_ID = "password_check";
     private static final CharSequence PASSWORD = "azerty";
-    private static final String MY_PROXY = "192.168.10.2:8080";
+//    private static final String MY_PROXY = "192.168.10.2:8080";
 
     /**
      * Method Main
@@ -29,11 +28,11 @@ public class CreateSpotifyAccount {
      */
     public static final FirefoxProfile FFProfile(){
         FirefoxProfile profile = new FirefoxProfile();
-        Proxy proxy = new Proxy();
-        proxy.setHttpProxy(MY_PROXY);
-        proxy.setSslProxy(MY_PROXY);
-        proxy.setNoProxy("localhost, 127.0.0.1,2003agorha,192.168.20.164,192.*,appli.agriculture,appli.national.agri,192.168.20.152,192.168.20.153,192.168.20.25,repos.forge.agriculture,192.168.10.51,192.168.20.25,192.168.20.189,orion.o2.auzeville.agri,192.168.20.180,orsdev2.o2.auzeville.agri,orsdev1.o2.auzeville.agri,reports.forge.national.agri,assistance.o2.auzeville.agri,izoard.exploit.auzeville.agri,ci-rec.forge.agriculture,ci.forge.agriculture,dev-ors3-maitre.exploit.auzeville.agri,192.168.20.151,scm.forge.agriculture,reports.forge.national.agri,192.168.20.159,192.168.20.25,assistance.bmsq.auzeville.agri,orion.o2.auzeville.agri,192.168.20.112");
-        profile.setProxyPreferences(proxy );
+//        Proxy proxy = new Proxy();
+//        proxy.setHttpProxy(MY_PROXY);
+//        proxy.setSslProxy(MY_PROXY);
+//        proxy.setNoProxy("localhost, 127.0.0.1");
+//        profile.setProxyPreferences(proxy );
         return profile;
     }
 
